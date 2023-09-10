@@ -27,7 +27,7 @@ plt.plot(perpendicular_x, perpendicular_y, linestyle='dashed', color='green', la
 
 plt.title('Линейная функция')
 
-plt.text(10, 17, 'Ограничение', fontsize=10, color='red')
+plt.text(10, 17, 'Ограничение', fontsize=10, color='red', rotation=-38)
 
 plt.grid(True)
 plt.legend()
