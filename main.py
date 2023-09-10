@@ -1,7 +1,7 @@
 #М3О-234Б-22 Симонова,Матвеенко 6 группа
 import numpy as np
 import matplotlib.pyplot as plt
-
+# Создаем массивы x1 и x2
 x1 = np.linspace(0, 40, 100)
 x2 = np.linspace(0, 40, 100)
 
