@@ -24,6 +24,10 @@ plt.plot(perpendicular_x, perpendicular_y, linestyle='dashed', color='green', la
 
 plt.title('Линейная функция')
 
+# Добавляем заливку между красной линией и осями координат
+plt.fill_between(x1, (141 - 4 * x1) / 5, where=[(x >= 0 and x <= 19) for x in x1], color='lavenderblush')
+
+
 plt.grid(True)
 plt.legend()
 plt.show()
