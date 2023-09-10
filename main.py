@@ -12,10 +12,11 @@ constraint = 4*X1 + 5*X2
 plt.figure(figsize=(8, 6))
 plt.xlabel('x1')
 plt.ylabel('x2')
-plt.contour(X1, X2, constraint, levels=[141], colors='red', linestyles='dashed', label='Ограничение')
-
+contour = plt.contour(X1, X2, constraint, levels=[141], colors='red', linestyles='dashed')
+plt.axhline(color='red', linestyle='dashed', label='4*X1 + 5*X2')
 plt.axvline(x=19, color='gray', linestyle='dashed', label='x1=19')
 plt.axhline(y=17, color='gray', linestyle='dashed', label='x2=17')
+
 
 
 
