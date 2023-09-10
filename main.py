@@ -30,6 +30,8 @@ plt.title('Линейная функция')
 plt.text(10, 17, 'Ограничение', fontsize=10, color='red', rotation=-38)
 plt.text(20, 10, 'x1=19', fontsize=10, color='gray')
 plt.text(5, 17.5, 'x2=17', fontsize=10, color='gray')
+plt.text(3, 2.5, 'z (3, 5)', fontsize=10, color='black')
+plt.text(-4, 2, 'Перпендикуляр', fontsize=10, color='green')
 
 plt.grid(True)
 plt.legend()
