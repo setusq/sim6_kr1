@@ -22,6 +22,8 @@ perpendicular_x = np.array([5, -5])
 perpendicular_y = np.array([-3, 3])
 plt.plot(perpendicular_x, perpendicular_y, linestyle='dashed', color='green', label='перпендикуляр')
 
+plt.title('Линейная функция')
+
 plt.grid(True)
 plt.legend()
 plt.show()
