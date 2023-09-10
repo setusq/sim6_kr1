@@ -17,9 +17,6 @@ plt.contour(X1, X2, constraint, levels=[141], colors='red', linestyles='dashed',
 plt.axvline(x=19, color='gray', linestyle='dashed', label='x1=19')
 plt.axhline(y=17, color='gray', linestyle='dashed', label='x2=17')
 
-plt.axvline(x=19, color='gray', linestyle='dashed', label='x1=19')
-plt.axhline(y=17, color='gray', linestyle='dashed', label='x2=17')
-
 
 
 
