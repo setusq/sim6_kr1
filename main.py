@@ -27,11 +27,10 @@ plt.plot(perpendicular_x, perpendicular_y, linestyle='dashed', color='green', la
 
 plt.title('Линейная функция')
 
-plt.text(10, 17, 'Ограничение', fontsize=10, color='red', rotation=-38)
+plt.text(10, 17, '4*X1 + 5*X2 = 141', fontsize=10, color='red', rotation=-38)
 plt.text(20, 5, 'x1=19', fontsize=10, color='gray', rotation=270)
 plt.text(5, 17.5, 'x2=17', fontsize=10, color='gray')
 plt.text(3, 2.5, 'z (3, 5)', fontsize=10, color='black')
-plt.text(-4, 2, 'Перпендикуляр', fontsize=10, color='green')
 
 plt.grid(True)
 plt.legend()
