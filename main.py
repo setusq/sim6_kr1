@@ -25,6 +25,7 @@ plt.plot(perpendicular_x, perpendicular_y, linestyle='dashed', color='green', la
 plt.title('Линейная функция')
 plt.fill_between(x1, (141 - 4 * x1) / 5, where=[(x >= 0 and x <= 19) for x in x1], color='lavenderblush')
 plt.fill_between([19, 40], 0, [(141 - 4 * 19) / 5, (141 - 4 * 40) / 5], color='lavenderblush')
+plt.fill_between([0, 19], [17, 17], [(141 - 4 * 19) / 5, (141 - 4 * 19) / 5], color='lavenderblush')
 
 
 plt.grid(True)
