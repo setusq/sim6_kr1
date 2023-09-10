@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 # Создаем массивы x1 и x2
 x1 = np.linspace(0, 40, 100)
 x2 = np.linspace(0, 40, 100)
-
+# Создаем сетку X1 и X2
 X1, X2 = np.meshgrid(x1, x2)
 
 plt.figure(figsize=(8, 6))
