@@ -47,7 +47,7 @@ print ("Результат:")
 for variable in problem.variables():
     print (variable.name, "=", variable.varValue)
 print ("Прибыль:")
-#print (value(problem.objective))
+print(pulp.value(problem.objective))
 stop = time.time()
 print ("Время :")
 print(stop- start)
