@@ -51,3 +51,37 @@ print ("Прибыль:")
 stop = time.time()
 print ("Время :")
 print(stop- start)
+
+#cvxopt
+from cvxopt.modeling import variable, op 
+import time 
+start = time.time() 
+x = variable(2, 'x') 
+z=-(1*x[0] +1*x[1])#Функция цели
+mass1 = (1*x[0] - 2*x[1] <= 30) #"1"
+mass2 = (5*x[0] - 1*x[1] <= 25) # "2"
+x_non_negative = (x >= 0) #"3" 
+problem =op(z,[mass1,mass2,x_non_negative]) 
+problem.solve(solver='glpk') 
+problem.status 
+print ("Прибыль:") 
+print(abs(problem.objective.value()[0])) 
+print ("Результат:") 
+print(x.value) 
+stop = time.time() 
+print ("Время :") 
+print (stop - start)
+
+#scipy
+from scipy.optimize import linprog 
+import time 
+start = time.time() 
+c = [-1,-1] #Функция цели
+A_ub = [[1,-2]] #'1' 
+b_ub = [30]#'1' 
+A_eq = [[5,-1]] #'2' 
+b_eq = [25] #'2' 
+print (linprog(c, A_ub, b_ub, A_eq, b_eq)) 
+stop = time.time() 
+print ("Время :") 
+print(stop - start)
